@@ -58,3 +58,116 @@ ol{
     margin-right: 10%; /* Espacio fijo entre ícono y texto */
     
 }
+
+.titulo2::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    background-image: url("../img/logo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+    vertical-align: middle;
+    margin-right: 10%;
+}
+
+.titulo3::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    background-image: url("../img/logo3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+    vertical-align: middle;
+    margin-right: 10%;
+}
+
+.titulo4::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background-image: url("../img/logo4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+    vertical-align: middle;
+    margin-right: 10%;
+}
+
+.titulo5::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    background-image: url("../img/logo5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+    vertical-align: middle;
+    margin-right: 10%;
+}
+
+.titulo6::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    background-image: url("../img/logo6.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+    vertical-align: middle;
+    margin-right: 10%;
+}
+
+.titulo7::before{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-image: url("../img/logo7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1px;
+    vertical-align: middle;
+    margin-right: 10%;
+}
+
+
+footer{
+    background-color: rgba(253, 220, 33, 0.884);
+    color: black;
+    padding: 10px;
+    font-size: 100%;
+    text-align: right;
+}
+
+.icono{
+    display: inline-block; /* Alinea horizontalmente */
+    margin-right: 5%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+img{
+    width: 10%;
+    height: auto;
+}
+
+.link_git{
+    color: black;
+}
+
+a:hover{
+    color: #41418f;
+    font-size: 20px;
+}
+
+.edu{
+    
+}
