@@ -1,0 +1,60 @@
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffd900f3;
+    color: black;
+    padding: 2%;
+    text-align: right;
+    font-size: 90%;
+}
+
+.img__profile{
+    margin-inline-start: 2vw;
+    width: 16vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.title {
+    font-size: 300%;
+}
+
+body{
+    font-family: ;
+    background-color: #333333d0;
+    color: rgb(255, 255, 255);
+    margin: 0%;
+    padding: 0%;
+}
+
+.titulo1, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulo7{
+    display: inline-flex; /* Alinea horizontalmente ícono y texto */
+    background: linear-gradient(135deg, #41418f, #6c6c9e); /* Degradado morado */
+    border-radius: 200px; /* Bordes redondeados */
+    padding: 15px 40px;/* Espacio interno */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    white-space: nowrap; /* Hace que no haya salto de linea */
+    align-items: center; /* Centra el texto verticalmente */
+    margin-left: 10%;
+}
+
+ol{
+    list-style: none;
+    padding-left: 0;
+}
+
+.titulo1::before{
+    content: ""; /* Crea el ícono */
+    display: flex;
+    width: 40px;
+    height: 25px;
+    background-image: url("../img/logo1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0%;
+    margin-right: 10%; /* Espacio fijo entre ícono y texto */
+    
+}
