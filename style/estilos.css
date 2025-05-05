@@ -1,8 +1,10 @@
+@import url(./variables.css);
+
 .cabecera{
     display: flex;
     justify-content: space-between;
-    background-color: #ffd900f3;
-    color: black;
+    background-color: #052B52;
+    color: #E2E2DD;
     padding: 2%;
     text-align: right;
     font-size: 90%;
@@ -19,19 +21,21 @@
 
 .title {
     font-size: 300%;
+    font-family: "upheavtt";
 }
 
 body{
-    font-family: ;
-    background-color: #333333d0;
-    color: white;
+    font-family: "genflox";
+    background-color: #E2E2DD;
+    color: #2b2d2f;
     margin: 0%;
     padding: 0%;
 }
 
 .titulo1, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulo7{
     display: inline-flex; /* Alinea horizontalmente ícono y texto */
-    background: linear-gradient(135deg, #41418f, #6c6c9e); /* Degradado morado */
+    background: linear-gradient(135deg, rgba(43, 45, 47, 0.92), rgba(5, 43, 82, 0.92));
+    ; /* Degradado morado */
     border-radius: 200px; /* Bordes redondeados */
     padding: 15px 40px;/* Espacio interno */
     color: rgb(255, 255, 255);
@@ -134,8 +138,8 @@ li{
 
 
 footer{
-    background-color: rgba(253, 220, 33, 0.884);
-    color: black;
+    background-color: #052B52;
+    color: #E2E2DD;
     padding: 5px;
     font-size: 30px;
     text-align: right;
