@@ -46,6 +46,14 @@ ol{
     padding-left: 0;
 }
 
+.titulo_imp{
+    font-size: 1.2em;
+}
+
+li{
+    font-size: 1.1em;
+}
+
 .titulo1::before{
     content: ""; /* Crea el ícono */
     display: flex;
@@ -54,7 +62,6 @@ ol{
     background-image: url("../img/logo1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 0%;
     margin-right: 10%; /* Espacio fijo entre ícono y texto */
     
 }
@@ -67,8 +74,6 @@ ol{
     background-image: url("../img/logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 1px;
-    vertical-align: middle;
     margin-right: 10%;
 }
 
@@ -80,8 +85,6 @@ ol{
     background-image: url("../img/logo3.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 1px;
-    vertical-align: middle;
     margin-right: 10%;
 }
 
@@ -93,8 +96,6 @@ ol{
     background-image: url("../img/logo4.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 1px;
-    vertical-align: middle;
     margin-right: 10%;
 }
 
@@ -106,8 +107,6 @@ ol{
     background-image: url("../img/logo5.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 1px;
-    vertical-align: middle;
     margin-right: 10%;
 }
 
@@ -119,8 +118,6 @@ ol{
     background-image: url("../img/logo6.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 1px;
-    vertical-align: middle;
     margin-right: 10%;
 }
 
@@ -132,8 +129,6 @@ ol{
     background-image: url("../img/logo7.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 1px;
-    vertical-align: middle;
     margin-right: 10%;
 }
 
@@ -141,8 +136,8 @@ ol{
 footer{
     background-color: rgba(253, 220, 33, 0.884);
     color: black;
-    padding: 10px;
-    font-size: 100%;
+    padding: 5px;
+    font-size: 30px;
     text-align: right;
 }
 
@@ -168,6 +163,3 @@ a:hover{
     font-size: 20px;
 }
 
-.edu{
-    
-}
