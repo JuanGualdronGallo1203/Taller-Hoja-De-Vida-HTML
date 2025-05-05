@@ -24,7 +24,7 @@
 body{
     font-family: ;
     background-color: #333333d0;
-    color: rgb(255, 255, 255);
+    color: white;
     margin: 0%;
     padding: 0%;
 }
@@ -163,3 +163,46 @@ a:hover{
     font-size: 20px;
 }
 
+#boton:hover{
+font-size: 25px;
+color: rgb(190, 201, 211);
+}
+
+@keyframes slideInUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  section {
+    animation: slideInUp 1s ease-out forwards;
+    animation-delay: calc(0.3s * var(--delay)); /* Ajusta el retraso según la posición */
+    opacity: 0; /* Inicialmente oculto */
+  }
+  
+  section:nth-child(1) {
+    --delay: 0;
+  }
+  section:nth-child(2) {
+    --delay: 1;
+  }
+  section:nth-child(3) {
+    --delay: 2;
+  }
+  section:nth-child(4) {
+    --delay: 3;
+}
+  section:nth-child(5) {
+    --delay: 2;
+}
+  section:nth-child(6) {
+    --delay: 2;
+}
+  section:nth-child(7) {
+    --delay: 2;
+}
