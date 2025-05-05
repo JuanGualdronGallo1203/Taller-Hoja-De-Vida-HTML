@@ -209,3 +209,24 @@ color: rgb(190, 201, 211);
   section:nth-child(7) {
     --delay: 2;
 }
+
+@keyframes typing {
+    from {
+    width: 0;
+    }
+    to {
+    width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+}
+
+.title {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
