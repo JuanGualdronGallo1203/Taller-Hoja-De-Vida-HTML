@@ -20,7 +20,7 @@
 
 
 .title {
-    font-size: 300%;
+    font-size: 5vw;
     font-family: "upheavtt";
 }
 
@@ -33,15 +33,14 @@ body{
 }
 
 .titulo1, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulo7{
-    display: inline-flex; /* Alinea horizontalmente ícono y texto */
+    display: inline-flex;
     background: linear-gradient(135deg, rgba(43, 45, 47, 0.92), rgba(5, 43, 82, 0.92));
-    ; /* Degradado morado */
-    border-radius: 200px; /* Bordes redondeados */
-    padding: 15px 40px;/* Espacio interno */
+    border-radius: 200px;
+    padding: 15px 40px;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    white-space: nowrap; /* Hace que no haya salto de linea */
-    align-items: center; /* Centra el texto verticalmente */
+    white-space: nowrap;
+    align-items: center;
     margin-left: 10%;
 }
 
@@ -59,14 +58,14 @@ li{
 }
 
 .titulo1::before{
-    content: ""; /* Crea el ícono */
+    content: "";
     display: flex;
     width: 40px;
     height: 25px;
     background-image: url("../img/logo1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 10%; /* Espacio fijo entre ícono y texto */
+    margin-right: 10%;
     
 }
 
@@ -185,7 +184,7 @@ color: rgb(190, 201, 211);
   
   section {
     animation: slideInUp 1s ease-out forwards;
-    animation-delay: calc(0.3s * var(--delay)); /* Ajusta el retraso según la posición */
+    animation-delay: calc(0.5s * var(--delay)); /* Ajusta el retraso según la posición */
     opacity: 0; /* Inicialmente oculto */
   }
   
