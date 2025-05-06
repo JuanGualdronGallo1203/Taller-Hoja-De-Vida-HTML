@@ -35,8 +35,8 @@ body{
 .titulo1, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulo7{
     display: inline-flex;
     background: linear-gradient(135deg, rgba(43, 45, 47, 0.92), rgba(3, 58, 112, 0.92));
-    border-radius: 200px;
-    padding: 15px 40px;
+    border-radius: 200vw;
+    padding: 1.5vw 3.5vw;
     color: rgb(255, 255, 255);
     font-weight: bold;
     white-space: nowrap;
@@ -60,8 +60,8 @@ li{
 .titulo1::before{
     content: "";
     display: flex;
-    width: 40px;
-    height: 25px;
+    width: 3.5vw;
+    height: 1.5vw;
     background-image: url("../img/logo1.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -72,8 +72,8 @@ li{
 .titulo2::before{
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 25px;
+    width: 3.5vw;
+    height: 1.5vw;
     background-image: url("../img/logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -83,8 +83,8 @@ li{
 .titulo3::before{
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 25px;
+    width: 3.5vw;
+    height: 1.5vw;
     background-image: url("../img/logo3.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -94,8 +94,8 @@ li{
 .titulo4::before{
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 30px;
+    width: 3.5vw;
+    height: 1.5vw;
     background-image: url("../img/logo4.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -105,8 +105,8 @@ li{
 .titulo5::before{
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 25px;
+    width: 3.5vw;
+    height: 1.5vw;
     background-image: url("../img/logo5.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -116,8 +116,8 @@ li{
 .titulo6::before{
     content: "";
     display: inline-block;
-    width: 40px;
-    height: 25px;
+    width: 3.5vw;
+    height: 1.5vw;
     background-image: url("../img/logo6.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -127,8 +127,8 @@ li{
 .titulo7::before{
     content: "";
     display: inline-block;
-    width: 50px;
-    height: 25px;
+    width: 3.5vw;
+    height: 1.5vw;
     background-image: url("../img/logo7.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ a:hover{
 }
 
 #boton:hover{
-font-size: 25px;
+font-size: 30px;
 color: rgb(190, 201, 211);
 }
 
@@ -229,4 +229,9 @@ color: rgb(190, 201, 211);
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+.complet{
+    display: flex;
+    justify-content: s;
 }
