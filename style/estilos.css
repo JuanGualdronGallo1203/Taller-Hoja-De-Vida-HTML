@@ -41,6 +41,7 @@ body{
     white-space: nowrap;
     align-items: center;
     margin-left: 5.5vw;
+    margin-bottom: 1rem;
 }
 
 ol{
@@ -49,11 +50,11 @@ ol{
 }
 
 .titulo_imp{
-    font-size: 1.2em;
+    font-size: 2.0vw;
 }
 
 li{
-    font-size: 1.1em;
+    font-size: 2vw;
 }
 
 .titulo1::before{
@@ -64,7 +65,7 @@ li{
     background-image: url("../img/logo1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 8vw;
+    margin-right: 4vw;
     
 }
 
@@ -76,7 +77,7 @@ li{
     background-image: url("../img/logo2.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 8vw;
+    margin-right: 4vw;
 }
 
 .titulo3::before{
@@ -87,7 +88,7 @@ li{
     background-image: url("../img/logo3.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 8vw;
+    margin-right:4vw;
 }
 
 .titulo4::before{
@@ -98,7 +99,7 @@ li{
     background-image: url("../img/logo4.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 8vw;
+    margin-right: 4vw;
 }
 
 .titulo5::before{
@@ -109,7 +110,7 @@ li{
     background-image: url("../img/logo5.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 8vw;
+    margin-right: 3vw;
 }
 
 .titulo6::before{
@@ -120,7 +121,7 @@ li{
     background-image: url("../img/logo6.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 5vw;
+    margin-right: 2vw;
 }
 
 .titulo7::before{
@@ -165,28 +166,37 @@ a:hover{
     font-size: 20px;
 }
 
-#boton:hover{
-font-size: 25px;
-color: rgb(190, 201, 211);
+#boton{ 
+    transition: all 0.3s ease;
+}
 
+#boton:hover{ 
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 2.5vw;
+}
+
+#boton:active{ 
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes slideInUp {
     from {
-      transform: translateY(40px);
-      opacity: 0;
+        transform: translateY(40px);
+        opacity: 0;
     }
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
-  section {
-    animation: slideInUp 1s ease-out forwards;
-    animation-delay: calc(0.5s * var(--delay)); /* Ajusta el retraso según la posición */
-    opacity: 0; /* Inicialmente oculto */
-  }
+}
+
+section {
+    animation: slideInUp 0.5s ease-out forwards;
+    animation-delay: calc(0.5s * var(--delay));
+    opacity: 0;
+}
   
   section:nth-child(1) {
     --delay: 0;
@@ -201,13 +211,13 @@ color: rgb(190, 201, 211);
     --delay: 3;
 }
   section:nth-child(5) {
-    --delay: 2;
+    --delay: 4;
 }
   section:nth-child(6) {
-    --delay: 2;
+    --delay: 5;
 }
   section:nth-child(7) {
-    --delay: 2;
+    --delay: 6;
 }
 
 @keyframes typing {
@@ -221,7 +231,7 @@ color: rgb(190, 201, 211);
 
 @keyframes blink {
     50% {
-    border-color: transparent;
+        border-color: transparent;
     }
 }
 
@@ -235,8 +245,80 @@ color: rgb(190, 201, 211);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0vw;
-    justify-content: flex-start;
-    align-content: center;
-    padding: 15px;
+    justify-content: space-between;
 }
+
+.left,.right {
+    max-width: 48%;
+}
+
+.left {
+    text-align: left;
+    margin-left: auto;
+}
+
+.right {
+    text-align: left;
+    margin-left: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+/* 
+/* Estilos para móviles */
+@media (max-width: 768px) {
+   
+    p {
+        font-size: 0.4rem; 
+        line-height: 1.5; 
+    }
+   
+    header.cabecera {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_profile {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+
+.titulo,.titulo2,.titulo3,.titulo4 {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+.titulo,.titulo2,.titulo3,.titulo4 {
+        font-size: 2rem;
+    }
+} 
