@@ -40,8 +40,8 @@ body{
     font-weight: bold;
     white-space: nowrap;
     align-items: center;
-    margin-left: 5.5vw;
-    margin-bottom: 2vw;
+    margin-left: 1.7vw;
+    margin-bottom: 1vw;
 }
 
 ol{
@@ -139,6 +139,7 @@ li{
 footer{
     background-color: #052B52;
     color: #E2E2DD;
+    margin-top: 1vw;
     padding: 5px;
     font-size: 30px;
     text-align: right;
@@ -284,12 +285,7 @@ img {
     justify-content: center;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-/* 
+
 /* Estilos para móviles */
 @media (max-width: 768px) {
    
@@ -360,6 +356,7 @@ img {
     }
 
     footer {
+
         font-size: 0.4rem;
         padding: 0.5rem;
     }
