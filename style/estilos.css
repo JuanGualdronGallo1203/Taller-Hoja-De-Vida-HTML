@@ -120,7 +120,7 @@ li{
     background-image: url("../img/logo6.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 8vw;
+    margin-right: 5vw;
 }
 
 .titulo7::before{
@@ -131,7 +131,7 @@ li{
     background-image: url("../img/logo7.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 8vw;
+    margin-right: 0.5vw;
 }
 
 
@@ -168,6 +168,7 @@ a:hover{
 #boton:hover{
 font-size: 25px;
 color: rgb(190, 201, 211);
+
 }
 
 @keyframes slideInUp {
@@ -232,5 +233,10 @@ color: rgb(190, 201, 211);
 
 .complet{
     display: flex;
-    justify-content: s;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0vw;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 15px;
 }
