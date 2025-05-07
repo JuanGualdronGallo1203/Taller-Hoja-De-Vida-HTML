@@ -260,6 +260,10 @@ section {
 .right {
     text-align: left;
     margin-left: auto;
+    margin-left: 0 !important;
+    position: relative;
+    left: 0;
+    width: 50%;
 }
 
 img {
@@ -322,3 +326,35 @@ img {
         font-size: 2rem;
     }
 } 
+
+@media (max-width: 162px){
+    p {
+        font-size: 0.1rem; 
+    }
+   
+    header.cabecera {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img_profile {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+.titulo,.titulo2,.titulo3,.titulo4 {
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+    section {
+        padding: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.4rem;
+        padding: 0.5rem;
+    }
+}
