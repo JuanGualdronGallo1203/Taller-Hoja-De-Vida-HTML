@@ -41,7 +41,7 @@ body{
     white-space: nowrap;
     align-items: center;
     margin-left: 5.5vw;
-    margin-bottom: 1rem;
+    margin-bottom: 2vw;
 }
 
 ol{
@@ -200,9 +200,11 @@ section {
   
   section:nth-child(1) {
     --delay: 0;
+    height: auto;
   }
   section:nth-child(2) {
     --delay: 1;
+    height: auto;
   }
   section:nth-child(3) {
     --delay: 2;
@@ -266,6 +268,10 @@ section {
     width: 50%;
 }
 
+ul {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -305,7 +311,7 @@ img {
     }
 
 .titulo,.titulo2,.titulo3,.titulo4 {
-        padding: 1rem;
+        padding: auto rem;
         font-size: 1rem;
     }
 
