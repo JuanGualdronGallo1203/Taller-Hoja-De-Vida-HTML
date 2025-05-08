@@ -57,7 +57,7 @@ li{
     font-size: 2vw;
 }
 
-.titulo1::before{
+.titulo1 li::before{
     content: "";
     display: flex;
     width: 3.5vw;
@@ -66,7 +66,6 @@ li{
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 4vw;
-    
 }
 
 .titulo2::before{
@@ -244,31 +243,6 @@ section {
     animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
 }
 
-.complet{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.left,.right {
-    max-width: 48%;
-}
-
-.left {
-    text-align: left;
-    margin-left: auto;
-}
-
-.right {
-    text-align: left;
-    margin-left: auto;
-    margin-left: 0 !important;
-    position: relative;
-    left: 0;
-    width: 50%;
-}
-
 ul {
     margin: 0;
 }
@@ -286,78 +260,44 @@ img {
 }
 
 
-/* Estilos para móviles */
-@media (max-width: 768px) {
-   
-    p {
-        font-size: 0.4rem; 
-        line-height: 1.5; 
-    }
-   
-    header.cabecera {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+/* Móviles */
+@media (max-width: 800px) {
 
-    .img_profile {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 1rem;
+    .titulo1::before, .titulo2::before, .titulo3::before, .titulo4::before, .titulo5::before, .titulo6::before, .titulo7::before{
+        content: "";
+        display: flex;
+        width: 2.5vw;
+        height: 2.5vw;
+        background-image: url("../img/logo1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10VW;
     }
-
-.titulo,.titulo2,.titulo3,.titulo4 {
-        padding: auto rem;
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 1rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-        padding: 1rem;
-    }
-
 }
 
-/* Tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-.titulo,.titulo2,.titulo3,.titulo4 {
-        font-size: 2rem;
+/* Escritorios */
+@media (min-width: 800px) and (max-width: 1280px) {
+
+    .complet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        max-width: 350vw;
     }
+
+
+.left {
+    text-align: left;
+    margin-left: auto;
+}
+
+.right {
+    text-align: left;
+    margin-left: auto;
+    margin-left: 0 !important;
+    position: relative;
+    left: 0;
+    width: 50vw;
+
 } 
-
-@media (max-width: 162px){
-    p {
-        font-size: 0.1rem; 
-    }
-   
-    header.cabecera {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .img_profile {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 1rem;
-    }
-
-.titulo,.titulo2,.titulo3,.titulo4 {
-        padding: 0.5rem;
-        font-size: 0.5rem;
-    }
-
-    section {
-        padding: 0.5rem;
-    }
-
-    footer {
-
-        font-size: 0.4rem;
-        padding: 0.5rem;
-    }
-}
