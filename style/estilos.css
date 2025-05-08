@@ -68,7 +68,7 @@ li{
     margin-right: 4vw;
 }
 
-.titulo2::before{
+.titulo2 li::before{
     content: "";
     display: inline-block;
     width: 3.5vw;
@@ -79,7 +79,7 @@ li{
     margin-right: 4vw;
 }
 
-.titulo3::before{
+.titulo3 li::before{
     content: "";
     display: inline-block;
     width: 3.5vw;
@@ -90,7 +90,7 @@ li{
     margin-right:4vw;
 }
 
-.titulo4::before{
+.titulo4 li::before{
     content: "";
     display: inline-block;
     width: 3.5vw;
@@ -101,7 +101,7 @@ li{
     margin-right: 4vw;
 }
 
-.titulo5::before{
+.titulo5 li::before{
     content: "";
     display: inline-block;
     width: 3.5vw;
@@ -112,7 +112,7 @@ li{
     margin-right: 3vw;
 }
 
-.titulo6::before{
+.titulo6 li::before{
     content: "";
     display: inline-block;
     width: 3.5vw;
@@ -123,7 +123,7 @@ li{
     margin-right: 2vw;
 }
 
-.titulo7::before{
+.titulo7 li::before{
     content: "";
     display: inline-block;
     width: 3.5vw;
@@ -271,8 +271,24 @@ img {
         background-image: url("../img/logo1.png");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-right: 10VW;
+        margin-right: 15VW;
     }
+
+    .titulo1, .titulo2, .titulo3, .titulo4, .titulo5, .titulo6, .titulo7{
+        display: inline-flex;
+        background: linear-gradient(135deg, rgba(43, 45, 47, 0.92), rgba(3, 58, 112, 0.92));
+        border-radius: 300vw;
+        padding: 1.5vw 3.5vw;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        white-space: nowrap;
+        align-items: center;
+        margin-left: 1vw;
+        margin-bottom: 0.7vw;
+        width: 40%;
+    }
+
+    
 }
 
 /* Escritorios */
